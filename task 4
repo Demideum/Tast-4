@@ -1,0 +1,29 @@
+namespace Task4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string clientName;
+            string clientCity;
+            string clientStreet;
+            string clientNomberHouse;
+
+            Console.Write("Как я могу к Вам обращаться?\t");
+            clientName = Console.ReadLine();
+           
+            Console.Write("В каком городе Вы проживаете?\t");
+            clientCity = Console.ReadLine();
+           
+            Console.Write("Укажите название Вашей улицы:\t");
+            clientStreet = Console.ReadLine();
+                                   
+            Console.Write("Укажите номер Вашего дома:\t");
+            clientNomberHouse = Console.ReadLine();
+
+            Console.WriteLine("\nУважаемый " + clientName + ". Спасибо за Ваш заказ! Он будет доставлен по адресу: г." + clientCity + ", ул." + clientStreet + ", " + clientNomberHouse + ". Всего наилучшего!");
+
+            Console.ReadKey();
+        }
+    }
+}
